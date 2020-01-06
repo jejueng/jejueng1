@@ -1,0 +1,219 @@
+Python 3.7.5 (tags/v3.7.5:5c02a39a0b, Oct 15 2019, 00:11:34) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> print('hello')
+hello
+>>> clear
+Traceback (most recent call last):
+  File "<pyshell#1>", line 1, in <module>
+    clear
+NameError: name 'clear' is not defined
+>>> candy0='딸기맛'
+>>> print(candy0)
+딸기맛
+>>> candy1='레몬맛'
+>>> print(candy1)
+레몬맛
+>>> candy2='수박맛'
+>>> print(candy2)
+수박맛
+>>> candy3='박하맛'
+>>> print(candy3)
+박하맛
+>>> candy4='우유맛'
+>>> print(candy4)
+우유맛
+>>> print(candy0+candy1+candy2+candy3)
+딸기맛레몬맛수박맛박하맛
+>>> print(candy0, candy1, candy2, candy3)
+딸기맛 레몬맛 수박맛 박하맛
+>>> print(candy0-candy1)
+Traceback (most recent call last):
+  File "<pyshell#14>", line 1, in <module>
+    print(candy0-candy1)
+TypeError: unsupported operand type(s) for -: 'str' and 'str'
+>>> print(candy**2)
+Traceback (most recent call last):
+  File "<pyshell#15>", line 1, in <module>
+    print(candy**2)
+NameError: name 'candy' is not defined
+>>> print(candy0**2)
+Traceback (most recent call last):
+  File "<pyshell#16>", line 1, in <module>
+    print(candy0**2)
+TypeError: unsupported operand type(s) for ** or pow(): 'str' and 'int'
+>>> print(candy0*3+candy1+2)
+Traceback (most recent call last):
+  File "<pyshell#17>", line 1, in <module>
+    print(candy0*3+candy1+2)
+TypeError: can only concatenate str (not "int") to str
+>>> print(candy0*3+candy1*2)
+딸기맛딸기맛딸기맛레몬맛레몬맛
+>>> candies=(딸기맛, 레몬맛)
+Traceback (most recent call last):
+  File "<pyshell#19>", line 1, in <module>
+    candies=(딸기맛, 레몬맛)
+NameError: name '딸기맛' is not defined
+>>> candies('딸기맛','레몬맛')
+Traceback (most recent call last):
+  File "<pyshell#20>", line 1, in <module>
+    candies('딸기맛','레몬맛')
+NameError: name 'candies' is not defined
+>>> candies=['딸기맛','레몬맛']
+>>> candies.append('박하맛')
+>>> candies.append('우유맛')
+>>> print(candies
+      )
+['딸기맛', '레몬맛', '박하맛', '우유맛']
+>>> candies[3]
+'우유맛'
+>>> print(candies[1])
+레몬맛
+>>> candies.append('파인맛')
+>>> candies.append('귤맛')
+>>> candies.append('사과맛')
+>>> print(candies)
+['딸기맛', '레몬맛', '박하맛', '우유맛', '파인맛', '귤맛', '사과맛']
+>>> print(candies[0:3], candies[1], candies[2:6])
+['딸기맛', '레몬맛', '박하맛'] 레몬맛 ['박하맛', '우유맛', '파인맛', '귤맛']
+>>> print('내가 좋아하는 맛은',candies[0],'입니다')
+내가 좋아하는 맛은 딸기맛 입니다
+>>> candies.sort()
+>>> print(candies)
+['귤맛', '딸기맛', '레몬맛', '박하맛', '사과맛', '우유맛', '파인맛']
+>>> for num in range(15):
+	print('hi 거북',num)
+
+	
+hi 거북 0
+hi 거북 1
+hi 거북 2
+hi 거북 3
+hi 거북 4
+hi 거북 5
+hi 거북 6
+hi 거북 7
+hi 거북 8
+hi 거북 9
+hi 거북 10
+hi 거북 11
+hi 거북 12
+hi 거북 13
+hi 거북 14
+>>> nums=[0,1,2]
+>>> for num in nums:
+	print(num)
+	print(nums)
+
+	
+0
+[0, 1, 2]
+1
+[0, 1, 2]
+2
+[0, 1, 2]
+>>> for num in range(5)"
+SyntaxError: EOL while scanning string literal
+>>> for num in range(5):
+	print(num)
+
+	
+0
+1
+2
+3
+4
+>>> for x in range(1,10):
+	print(2,'x',x,'=',2*x)
+
+	
+2 x 1 = 2
+2 x 2 = 4
+2 x 3 = 6
+2 x 4 = 8
+2 x 5 = 10
+2 x 6 = 12
+2 x 7 = 14
+2 x 8 = 16
+2 x 9 = 18
+>>> score=75
+>>> if 80<score<=100:
+	print('A학점')
+elif 60<score<=80:
+	print('B학점')
+elif 40<score<=60:
+	print('C학점')
+else:
+	print('F학점')
+
+	
+B학점
+>>> for zzz in range(3):
+	print(hi,zzz)
+
+	
+Traceback (most recent call last):
+  File "<pyshell#63>", line 2, in <module>
+    print(hi,zzz)
+NameError: name 'hi' is not defined
+>>> for zzz in range(3):
+	print('hi',zzz)
+
+hi 0
+hi 1
+hi 2
+>>> name=input('이름이뭐니')
+이름이뭐니
+>>> print(name,'안녕')
+ 안녕
+>>> name=input('이름이뭐니')
+이름이뭐니나야나
+>>> print(name,'안녕')
+나야나 안녕
+>>> answer=''
+>>> while anaser !='런던':
+	answer=input('영국의 수도는?')
+print('정답입니다.')
+SyntaxError: invalid syntax
+>>> while answer !='런던':
+	answer=input('영국의 수도는?')
+
+	
+영국의 수도는?런던
+>>> while answer !='런던':
+	answer=input('영국의 수도는?')
+
+	
+>>> while answer !='런던':
+	answer=input('영국의 수도는?')
+
+	
+>>> answer=''
+>>> while answer !='런던':
+	answer=input('영국의 수도는?')
+
+	
+영국의 수도는?파리
+영국의 수도는?서울
+영국의 수도는?런던
+>>> answer=''
+>>> while answer !='런던':
+	answer=input('영국의 수도는?')
+	if answer='런던'
+	
+SyntaxError: invalid syntax
+>>> while answer !='런던':
+	answer=input('영국의 수도는?')
+	if answer='런던':
+		
+SyntaxError: invalid syntax
+>>> while answer !='런던':
+	answer=input('영국의 수도는?')
+	if answer=='런던':
+		print('정답입니다')
+
+		
+영국의 수도는?서울
+영국의 수도는?파리
+영국의 수도는?런던
+정답입니다
+>>> 
