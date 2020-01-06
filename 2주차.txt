@@ -1,0 +1,122 @@
+
+>>> score=75
+>>> if 80<score<=100:
+	print('A학점')
+elif 60<score<=80:
+	print('B학점')
+elif 40<score<=60:
+	print('C학점')
+else:
+	print('F학점')
+
+	
+B학점
+>>> for zzz in range(3):
+	print(hi,zzz)
+
+	
+Traceback (most recent call last):
+  File "<pyshell#63>", line 2, in <module>
+    print(hi,zzz)
+NameError: name 'hi' is not defined
+>>> for zzz in range(3):
+	print('hi',zzz)
+
+hi 0
+hi 1
+hi 2
+>>> name=input('이름이뭐니')
+이름이뭐니
+>>> print(name,'안녕')
+ 안녕
+>>> name=input('이름이뭐니')
+이름이뭐니나야나
+>>> print(name,'안녕')
+나야나 안녕
+>>> answer=''
+>>> while anaser !='런던':
+	answer=input('영국의 수도는?')
+print('정답입니다.')
+SyntaxError: invalid syntax
+>>> while answer !='런던':
+	answer=input('영국의 수도는?')
+
+	
+영국의 수도는?런던
+>>> while answer !='런던':
+	answer=input('영국의 수도는?')
+
+	
+>>> while answer !='런던':
+	answer=input('영국의 수도는?')
+
+	
+>>> answer=''
+>>> while answer !='런던':
+	answer=input('영국의 수도는?')
+
+	
+영국의 수도는?파리
+영국의 수도는?서울
+영국의 수도는?런던
+>>> answer=''
+>>> while answer !='런던':
+	answer=input('영국의 수도는?')
+	if answer='런던'
+	
+SyntaxError: invalid syntax
+>>> while answer !='런던':
+	answer=input('영국의 수도는?')
+	if answer='런던':
+		
+SyntaxError: invalid syntax
+>>> while answer !='런던':
+	answer=input('영국의 수도는?')
+	if answer=='런던':
+		print('정답입니다')
+
+		
+영국의 수도는?서울
+영국의 수도는?파리
+영국의 수도는?런던
+정답
+
+>>> count=0
+>>> while count<3:
+	count=count+1
+	if count==2:
+		continue
+	print(count)
+
+	
+1
+3
+>>> count=0
+>>> while count<3:
+	count=count+1
+	if count==2:
+		break
+	print(count)
+
+	
+1
+>>> while True:
+	print('멈춰주세요')
+
+	
+멈춰주세요
+멈춰주세요
+멈춰주세요
+멈춰주세요
+멈춰주세요
+멈춰주세요
+멈춰주세요
+멈춰주세요
+멈춰주세요
+멈춰주세요
+멈춰주세요
+멈춰주세요
+멈춰주세요
+멈춰주세요
+멈춰주세요
+멈춰주세요
