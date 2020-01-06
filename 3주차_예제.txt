@@ -1,0 +1,46 @@
+Python 3.7.5 (tags/v3.7.5:5c02a39a0b, Oct 15 2019, 00:11:34) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> import random
+>>> rps=['가위','바위','보']
+>>> results={
+	('가위','보'):True,
+	('가위','바위'):False,
+	('바위','가위'):True,
+	('바위','보'):False,
+	('보','바위'):True,
+	('보','가위'):False
+	}
+>>> 
+>>> while True:
+	player=input('가위/바위/보/끝: ')
+	computer=random.choice(rps)
+	if player=='끝':
+		break
+	print(player,computer)
+	if player==computer:
+		print('비겼어요!')
+	elif results[(player, computer)]:
+		print('이겼어요!')
+	else:
+		print('졌어요!')
+
+		
+가위/바위/보/끝: 가위
+가위 보
+이겼어요!
+가위/바위/보/끝: 바위
+바위 보
+졌어요!
+가위/바위/보/끝: 보
+보 가위
+졌어요!
+가위/바위/보/끝: 보
+보 보
+비겼어요!
+가위/바위/보/끝: 가위
+가위 바위
+졌어요!
+가위/바위/보/끝: 보
+보 바위
+이겼어요!
+가위/바위/보/끝: 
