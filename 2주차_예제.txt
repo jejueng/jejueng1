@@ -1,0 +1,16 @@
+Python 3.7.5 (tags/v3.7.5:5c02a39a0b, Oct 15 2019, 00:11:34) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> total_price=0
+>>> choices=['버섯스프','당근주스','벌꿀파이']
+>>> for choice in choices:
+	if choice=='버섯스프':
+		total_price=total_price+8000
+	elif choice=='당근주스':
+		total_price=total_price+4500
+	elif choice=='벌꿀파이':
+		total_price=total_price+6000
+
+		
+>>> print('총 주문금액은',total_price,'원입니다,')
+총 주문금액은 18500 원입니다,
+>>> 
