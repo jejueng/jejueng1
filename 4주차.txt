@@ -1,0 +1,119 @@
+>>> def my_func():print('토끼야 안녕!')
+KeyboardInterrupt
+>>> def my_func():
+	print('토끼야 안녕!')
+
+>>> my_func()
+토끼야 안녕!
+>>> 
+>>> def add(num1,num2):
+	return num1+num2
+
+>>> print(add(2,3))
+5
+>>> 
+>>> def add_mul(num1,num2):
+	return num1+num2, num1*num2
+
+>>> print(add_mul(2,3))
+(5, 6)
+
+>>> def judge_cards(name):
+	print(name, '1 유죄!')
+	print(name, '2 유죄!')
+	print(name, '3 유죄!')
+
+	
+>>> judge_cards('하트')
+하트 1 유죄!
+하트 2 유죄!
+하트 3 유죄!
+>>> judge_cards('클로버')
+클로버 1 유죄!
+클로버 2 유죄!
+클로버 3 유죄!
+>>> judge_cards('스페이드,')
+스페이드, 1 유죄!
+스페이드, 2 유죄!
+스페이드, 3 유죄!
+>>> import random
+>>> print(random.randint(5,10))
+10
+>>> print(random.randint(5,10))
+9
+>>> print(random.randint(5,10))
+5
+>>> print(random.randint(5,10))
+6
+>>> import random
+>>> def compare(p_choice, c_choice):
+	if p_choice==c_choice:
+		print('비겼어요!')
+	elif (p_choice-c_choice)%3==1:
+		print('이겼어요!')
+	else:
+		print('졌어요!')
+
+		
+>>> while True:
+	rps=['가위','바위','보']
+	player=int(inpust('가위(0)/바위(1)/보(2)/끝(-1):'))
+	computer=random.randint(0,2)
+	if player==-1:
+		break
+
+	
+Traceback (most recent call last):
+  File "<pyshell#44>", line 3, in <module>
+    player=int(inpust('가위(0)/바위(1)/보(2)/끝(-1):'))
+NameError: name 'inpust' is not defined
+>>> import random
+>>> animals=['체셔고양이','오리','도도새']
+>>> print(random.sample(animals,2))
+['체셔고양이', '오리']
+>>> while True:
+	rps=['가위','바위','보']
+	player=int(inpust('가위(0)/바위(1)/보(2)/끝(-1):'))
+	computer=random.randint(0,2)
+	if player==-1:
+		break
+	print(rps[player],rps[computer])
+	compare(player,computer)
+
+	
+Traceback (most recent call last):
+  File "<pyshell#48>", line 3, in <module>
+    player=int(inpust('가위(0)/바위(1)/보(2)/끝(-1):'))
+NameError: name 'inpust' is not defined
+>>> while True:
+	rps=['가위','바위','보']
+	player=int(input('가위(0)/바위(1)/보(2)/끝(-1):'))
+	computer=random.randint(0,2)
+	if player==-1:
+		break
+	print(rps[player],rps[computer])
+	compare(player,computer)
+
+	
+가위(0)/바위(1)/보(2)/끝(-1):0
+가위 보
+이겼어요!
+가위(0)/바위(1)/보(2)/끝(-1):2
+보 가위
+졌어요!
+가위(0)/바위(1)/보(2)/끝(-1):2
+보 바위
+이겼어요!
+가위(0)/바위(1)/보(2)/끝(-1):1
+바위 보
+졌어요!
+가위(0)/바위(1)/보(2)/끝(-1):1
+바위 보
+졌어요!
+가위(0)/바위(1)/보(2)/끝(-1):1
+바위 보
+졌어요!
+가위(0)/바위(1)/보(2)/끝(-1):1
+바위 바위
+비겼어요!
+가위(0)/바위(1)/보(2)/끝(-1):-1
