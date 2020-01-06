@@ -1,0 +1,25 @@
+Python 3.7.5 (tags/v3.7.5:5c02a39a0b, Oct 15 2019, 00:11:34) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> canides=['µþ±â¸À','·¹¸ó¸À','¼ö¹Ú¸À','»ç°ú¸À','ÆÄÀÎ¾ÖÇÃ¸À','¹ÚÇÏ¸À']
+>>> print(candies)
+>>> candies=['µþ±â¸À','·¹¸ó¸À','¼ö¹Ú¸À','»ç°ú¸À','ÆÄÀÎ¾ÖÇÃ¸À','¹ÚÇÏ¸À']
+>>> print(candies)
+['µþ±â¸À', '·¹¸ó¸À', '¼ö¹Ú¸À', '»ç°ú¸À', 'ÆÄÀÎ¾ÖÇÃ¸À', '¹ÚÇÏ¸À']
+>>> candies.append('ÄÝ¶ó¸À')
+>>> candies.append('Æ÷µµ¸À')
+>>> print(candies)
+['µþ±â¸À', '·¹¸ó¸À', '¼ö¹Ú¸À', '»ç°ú¸À', 'ÆÄÀÎ¾ÖÇÃ¸À', '¹ÚÇÏ¸À', 'ÄÝ¶ó¸À', 'Æ÷µµ¸À']
+>>> sort.candies
+Traceback (most recent call last):
+  File "<pyshell#7>", line 1, in <module>
+    sort.candies
+NameError: name 'sort' is not defined
+>>> candies.sort()
+>>> print(candies)
+['µþ±â¸À', '·¹¸ó¸À', '¹ÚÇÏ¸À', '»ç°ú¸À', '¼ö¹Ú¸À', 'ÄÝ¶ó¸À', 'ÆÄÀÎ¾ÖÇÃ¸À', 'Æ÷µµ¸À']
+>>> del.candies[2]
+SyntaxError: invalid syntax
+>>> del candies[2]
+>>> print(candies)
+['µþ±â¸À', '·¹¸ó¸À', '»ç°ú¸À', '¼ö¹Ú¸À', 'ÄÝ¶ó¸À', 'ÆÄÀÎ¾ÖÇÃ¸À', 'Æ÷µµ¸À']
+>>> 
