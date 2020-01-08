@@ -1,0 +1,19 @@
+import tkinter
+from math import*
+
+window=tkinter.Tk()
+window.title("조류독감")
+window.geometry("640x480+100+100")
+window.resizable(False, False)
+
+def calc(event):
+    label.config(text="결과="+str(eval(entry.get()))) #eval 함수는 ()안에 것을 그대로 실행시켜줌.
+
+entry=tkinter.Entry(window)
+entry.bind("<Return>", calc) #Entry.bind()를 이용하여 key나 mouse 등의 event를 처리하여 메소드나 함수를 실행시킬 수 있습니다. 리턴은 엔터인거 같음.
+entry.pack()
+
+label=tkinter.Label(window)
+label.pack()
+
+window.mainloop()
