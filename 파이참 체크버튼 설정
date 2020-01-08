@@ -1,0 +1,28 @@
+import tkinter
+
+window=tkinter.Tk()
+window.title("조류독감")
+window.geometry("640x480+100+100")
+window.resizable(False, False)
+
+def flash():
+    checkbutton3.flash()
+    checkbutton1.flash()
+    checkbutton2.flash()
+
+
+
+CheckVariety_1=tkinter.IntVar()
+CheckVariety_2=tkinter.IntVar()
+CheckVariety_3=tkinter.IntVar()
+
+
+checkbutton1=tkinter.Checkbutton(window, text="O", variable=CheckVariety_1, activebackground="blue")
+checkbutton2=tkinter.Checkbutton(window, text="△", variable=CheckVariety_2,activebackground="red")
+checkbutton3=tkinter.Checkbutton(window, text="X", variable=CheckVariety_3, command=flash)
+
+checkbutton1.pack()
+checkbutton2.pack()
+checkbutton3.pack()
+
+window.mainloop()
