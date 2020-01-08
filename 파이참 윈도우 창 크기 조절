@@ -1,0 +1,7 @@
+import tkinter
+window = tkinter.Tk()
+window.title("조류독감")
+window.geometry("640x400+100+100") # 윈도우이름.geometry("너비x높이+x좌표+y좌표")를 이용하여 윈도우 창의 너비와 높이, 초기 화면 위치의 x좌표와 y좌표를 설정할 수있습니다.
+window.resizable(False, False) #윈도우 창크기 조절 True 값이면 창 크기를 조절 가능
+
+window.mainloop()
