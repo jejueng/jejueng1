@@ -1,0 +1,12 @@
+import tkinter
+
+window=tkinter.Tk()
+
+window.title("조류독감")
+window.geometry("640x400+100+100")
+window.resizable(False, False)
+
+label=tkinter.Label(window, text="안녕하세요.")      #위젯이름=tkinter.Label(윈도우창, text="내용")을 사용하여 윈도우 창에 Label 위젯을 설정할 수 있습니다.
+label.pack()        #위젯이름.pack()을 사용하여 위젯을 배치할 수 있습니다.
+
+window.mainloop()
